@@ -1,0 +1,314 @@
+body
+{
+	margin:0px;
+	font-family:'Arial',sans-serif;
+	background-image: url("pictures/rade.jpg");
+	background-size: cover;
+}
+
+
+#main-header
+{
+	background:white url('pictures/salaar.jfif') no-repeat scroll center;
+	background-size:cover;
+	padding:150px;
+	text-align:center;
+
+}
+#main-header h1
+{
+	margin:0px;
+	color:brown;
+	font-size:40px;
+	font-style: italic;
+}
+
+#main-nav
+{
+	background:linear-gradient(45deg,black,orange,brown);
+	padding:5px;
+	display:flex;
+	flex-direction:row;
+}
+#main-nav a
+{
+	color:white;
+	text-decoration:none;
+	margin:8px;
+	display:inline-block;
+	padding:10px 20px;
+}
+#main-nav a.active
+{
+	background:linear-gradient(45deg,grey,darkred);
+	border-radius:10px;
+	color:white;
+}
+#main-nav a:hover
+{
+	background:linear-gradient(45deg,grey,rgb(242,147,36));
+	border-radius:10px;
+	box-shadow:0 0 10px white;
+}
+.fa
+{
+	padding-right:5px;
+}
+
+
+#main-section
+{
+	text-align:center;
+	margin:15px 0px;
+
+}
+#main-section .main-section-article
+{
+	box-shadow:0 0 10px darkred;
+	width:330px;
+	height:500px;
+	margin:5px;
+	display:inline-grid;
+	border-radius:0px 30px 0px 30px;
+	transition:all 0.5s;
+}
+#main-section .main-section-article:hover
+{
+	width:340px;
+	cursor:pointer;
+}
+.main-section-article img
+{
+	width:100%;
+}
+.main-section-article .main-section-text
+{
+	padding:10px;
+}
+
+#main-section-news
+{
+	width:80%;
+	margin:auto;
+	color: white;
+}
+#main-section-news .main-section-news-article
+{
+	border:2px solid darkred;
+	box-shadow:0 0 10px darkred;
+	border-radius:20px;
+	margin:10px;
+	overflow:hidden;
+	text-align:center;
+}
+#main-section-news .main-section-news-article img
+{
+	width:500px;
+	height:300px;
+	box-shadow:0 0 10px darkred;
+	border-radius:20px;
+	transition:all 0.5s;
+}
+#main-section-news .main-section-news-article img:hover
+{
+	transform:scale(1.2,1.2);
+}
+#main-section-news .main-section-news-article h2
+{
+	background-color:darkred;
+	color:white;
+	margin:0px;
+	padding:10px;
+}
+#main-gallery
+{
+	width: 80%;
+	margin: auto;
+	color: white;
+}
+#main-gallery .main-gallery1
+{
+	border:2px solid darkred;
+	box-shadow:0 0 10px darkred;
+	border-radius:20px;
+	margin:10px;
+	overflow:hidden;
+	text-align:center;
+}
+
+#main-gallery .main-gallery1 h2
+{
+	background-color:darkred;
+	margin:0px;
+	color: white;
+	padding: 10px;
+	text-align: center;
+}
+#main-gallery .main-gallery1 img
+{
+	width:500px;
+	height:300px;
+	box-shadow:0 0 10px darkred;
+	border-radius:20px;
+	transition:all 0.5s;
+}
+#main-gallery .main-gallery1 img:hover
+{
+	transform: scale(1.2,1.2);
+}
+#main-about
+{
+	width: 80%;
+	margin: auto;
+	color: white;
+}
+#main-about .main-about1
+{
+	border:2px solid darkred;
+	box-shadow:0 0 10px darkred;
+	border-radius:20px;
+	margin:10px;
+	overflow:hidden;
+	text-align:center;
+}
+#main-about .main-about1 h2
+{
+	background-color:darkred;
+	margin:0px;
+	color: white;
+	padding: 10px;
+	text-align: center;
+}
+#main-contact
+{
+	text-align: center;
+	margin: 10px 0px 30px 0px;
+}
+#main-contact .main-contact1 h2
+{
+	background-color: darkred;
+	color: white;
+	padding: 10px;
+}
+#org
+{
+	margin: 20px  auto;
+	width: 400px;
+}
+.alter
+{
+	margin:10px auto;
+	width:30%;
+}
+.alter input[type="text"],input[type="email"],input[type="password"],input[type="number"]
+{
+ 	height: 60px;
+	width: 	400px;
+	border-radius: 	10px;
+	border: none;
+	outline: none;
+	background:none;
+	border-bottom: 3px solid silver;
+	color: cyan;
+	font-family: "Courier New", Courier, monospace;
+	font-weight: bold;
+}
+.alter input[type="submit"]
+{
+	width: 	180px;
+	height:20px;
+	margin:10px;
+	margin-bottom: 30px;
+	border-radius: 	10px;
+	background-color: rgb(36, 35, 34);
+	border: none;
+	outline: none;
+	font-family: "Courier New", Courier, monospace;
+	font-weight: bold;
+	font-size: 20px;
+	color:green;
+}
+::placeholder
+		{
+			font-family: "Courier New", Courier, monospace;
+			font-weight: bold;
+			color: white;
+		}
+.far
+		{
+			font-size: 90px;
+			background-color: silver;
+			margin-top: 30px;
+			border-radius: 50%;
+			border: 7px black;
+		}
+		#icon
+		{
+			text-align: center;
+
+		}
+
+@media (max-width:600px)
+{
+	#main-nav
+	{
+		flex-direction:column;
+	}
+}
+@media (max-width:750px)
+{
+	#main-nav
+	{
+		flex-direction:column;
+	}
+	#main-section-news .main-section-news-article img
+	{
+		width:400px;
+	}
+
+}
+@media (max-width:500px)
+{
+	#main-nav
+	{
+		flex-direction:column;
+	}
+	#main-section-news .main-section-news-article img
+	{
+		width:200px;
+	}
+
+}
+@media (max-width: 500px)
+{
+	#main-nav
+	{
+		flex-direction: column;
+	}
+	#main-gallery .main-gallery1 img
+	{
+		width:200px;
+	}
+@media (max-width: 500px)
+{
+	#main-nav	
+	{
+		flex-direction: column;
+	}
+	#mian-about .main-about1 
+	{
+		width: 200px;
+	}
+@media (max-width: 500px)
+{
+	#main-nav
+	{
+		flex-direction: column;
+	}
+	#main-contact .main-contact1
+	{
+		width: 200px;
+	}
+}
+
+}
